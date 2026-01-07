@@ -421,10 +421,35 @@ html[dir="ltr"] body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     animation: float 6s ease-in-out infinite;
     position: relative;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
     font-family: 'Courier New', monospace;
     direction: ltr;
     text-align: left;
+}
+
+.code-animation::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-animation::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 0 0 16px 16px;
+}
+
+.code-animation::-webkit-scrollbar-thumb {
+    background: rgba(20, 184, 166, 0.6);
+    border-radius: 0 0 16px 16px;
+    transition: background 0.3s;
+}
+
+.code-animation::-webkit-scrollbar-thumb:hover {
+    background: rgba(20, 184, 166, 0.8);
+}
+
+.code-animation {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(20, 184, 166, 0.6) rgba(15, 23, 42, 0.5);
 }
 
 .code-header {
@@ -1287,6 +1312,8 @@ section {
         font-size: 0.8rem;
         direction: ltr;
         text-align: left;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .code-content {
@@ -1359,6 +1386,8 @@ section {
         font-size: 0.75rem;
         direction: ltr;
         text-align: left;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .code-content {
@@ -1471,6 +1500,8 @@ section {
         font-size: 0.7rem;
         direction: ltr;
         text-align: left;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .code-content {
