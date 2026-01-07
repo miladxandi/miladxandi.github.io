@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="وب‌سایت شخصی میلاد زندی زند - برنامه‌نویس و توسعه‌دهنده نرم‌افزار">
+    <title>میلاد زندی زند | برنامه‌نویس</title>
+    <link rel="icon" type="image/jpeg" href="formal.jpg">
+    <link rel="apple-touch-icon" href="formal.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="formal.jpg" alt="میلاد زندی زند" class="nav-logo">
+                <h2>میلاد زندی زند</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">خانه</a></li>
+                <li><a href="#about" class="nav-link">درباره من</a></li>
+                <li><a href="#skills" class="nav-link">مهارت‌ها</a></li>
+                <li><a href="#projects" class="nav-link">پروژه‌ها</a></li>
+                <li><a href="#contact" class="nav-link">تماس</a></li>
+                <li><a href="index-en.html" class="nav-link lang-switcher"><i class="fas fa-language"></i> EN</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">سلام، من</span>
+                    <span class="name">میلاد زندی زند</span>
+                    <span class="title">هستم</span>
+                </h1>
+                <p class="hero-subtitle">بازی‌ساز Unity | توسعه‌دهنده موبایل | فول استک</p>
+                <p class="hero-description">
+                    با بیش از 8 سال تجربه در توسعه بازی‌های Unity، اپلیکیشن‌های موبایل با MAUI.NET و ساخت سیستم‌های فول استک با Laravel و Nuxt.js
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">تماس با من</a>
+                    <a href="#projects" class="btn btn-secondary">مشاهده پروژه‌ها</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-photo-wrapper">
+                    <img src="formal.jpg" alt="میلاد زندی زند" class="hero-photo">
+                    <div class="photo-glow"></div>
+                </div>
+                <div class="code-animation">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">PlayerController.cs</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="code-keyword">public class</span> <span class="code-class">PlayerController</span> : <span class="code-class">MonoBehaviour</span></div>
+                        <div class="code-line"><span class="code-indent">    </span><span class="code-keyword">private</span> <span class="code-type">float</span> <span class="code-var">speed</span> = <span class="code-number">5f</span>;</div>
+                        <div class="code-line"><span class="code-indent">    </span><span class="code-keyword">void</span> <span class="code-method">Update</span>()</div>
+                        <div class="code-line"><span class="code-indent">        </span><span class="code-var">transform</span>.<span class="code-method">Translate</span>(<span class="code-var">Vector3</span>.<span class="code-property">forward</span> * <span class="code-var">speed</span> * <span class="code-type">Time</span>.<span class="code-property">deltaTime</span>);</div>
+                        <div class="code-line"><span class="code-indent">    </span>}</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">درباره من</h2>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <img src="jungle.jpg" alt="میلاد زندی زند" class="about-image">
+                    <div class="about-image-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        من میلاد زندی زند، یک توسعه‌دهنده فول استک با بیش از 8 سال تجربه حرفه‌ای هستم. 
+                        تخصص اصلی من در ساخت بازی‌های Unity، توسعه اپلیکیشن‌های موبایل برای اندروید و iOS 
+                        با استفاده از MAUI.NET، و ساخت سیستم‌های بک‌اند قدرتمند با Laravel و فرانت‌اند مدرن 
+                        با Nuxt.js است.
+                    </p>
+                    <p>
+                        به عنوان یک بازی‌ساز Unity، تجربه عمیقی در ساخت بازی‌های دو بعدی و سه بعدی، 
+                        بهینه‌سازی عملکرد و پیاده‌سازی مکانیک‌های پیچیده بازی دارم. در زمینه موبایل، 
+                        با MAUI.NET اپلیکیشن‌های cross-platform می‌سازم که همزمان روی اندروید و iOS 
+                        اجرا می‌شوند. در بخش وب، با Laravel API‌های RESTful و سیستم‌های مدیریتی پیچیده 
+                        می‌سازم و با Nuxt.js رابط‌های کاربری سریع و SEO-friendly پیاده‌سازی می‌کنم.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>سال تجربه</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>پروژه انجام شده</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Unity</h3>
+                            <p>بازی‌ساز</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">مهارت‌ها</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Unity Game Development</h3>
+                    <p>ساخت بازی‌های دو بعدی و سه بعدی با Unity و C#</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>.NET MAUI</h3>
+                    <p>توسعه اپلیکیشن‌های cross-platform برای اندروید و iOS</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3>Laravel</h3>
+                    <p>توسعه بک‌اند و API با Laravel PHP</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3>Nuxt.js</h3>
+                    <p>توسعه فرانت‌اند SSR و SPA با Nuxt.js و Vue.js</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android Development</h3>
+                    <p>توسعه اپلیکیشن‌های اندروید بومی</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>iOS Development</h3>
+                    <p>توسعه اپلیکیشن‌های iOS بومی</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript/TypeScript</h3>
+                    <p>توسعه وب با JavaScript و TypeScript</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB و Redis</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">پروژه‌ها</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>اپلیکیشن موبایل AyarPlus</h3>
+                        <p>یک اپلیکیشن جامع برای مدیریت فاکتورها و پرداخت‌ها با استفاده از .NET MAUI</p>
+                        <div class="project-tags">
+                            <span class="tag">.NET MAUI</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">XAML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>سیستم مدیریت پروژه</h3>
+                        <p>پلتفرم آنلاین برای مدیریت پروژه‌ها و همکاری تیمی</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>اپلیکیشن تجارت الکترونیک</h3>
+                        <p>فروشگاه آنلاین با قابلیت‌های پیشرفته خرید و پرداخت</p>
+                        <div class="project-tags">
+                            <span class="tag">.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تماس با من</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>بیایید با هم صحبت کنیم</h3>
+                    <p>اگر پروژه‌ای دارید یا می‌خواهید با من همکاری کنید، خوشحال می‌شوم از شما بشنوم.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>ایمیل</h4>
+                                <p>info@miladzandi.ir</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>https://github.com/miladxandi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>https://www.linkedin.com/in/miladxandi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="نام شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="ایمیل شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="موضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="پیام شما" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="cursor: pointer;font-family: 'Vazirmatn', sans-serif;">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo-wrapper">
+                <img src="formal.jpg" alt="میلاد زندی زند" class="footer-logo">
+            </div>
+            <p>&copy; 1404 میلاد زندی زند. تمامی حقوق محفوظ است.</p>
+            <div class="social-links">
+                <a href="https://github.com/miladxandi" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/miladxandi" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/milad_xandi" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Milad Zandi Zand - Programmer and Software Developer">
+    <title>Milad Zandi Zand | Developer</title>
+    <link rel="icon" type="image/jpeg" href="formal.jpg">
+    <link rel="apple-touch-icon" href="formal.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="formal.jpg" alt="Milad Zandi Zand" class="nav-logo">
+                <h2>Milad Zandi Zand</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link lang-switcher"><i class="fas fa-language"></i> FA</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Milad Zandi Zand</span>
+                    <span class="title"></span>
+                </h1>
+                <p class="hero-subtitle">Unity Game Developer | Mobile Developer | Full Stack</p>
+                <p class="hero-description">
+                    With over 8 years of experience in Unity game development, mobile applications with MAUI.NET, and building full-stack systems with Laravel and Nuxt.js
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-photo-wrapper">
+                    <img src="formal.jpg" alt="Milad Zandi Zand" class="hero-photo">
+                    <div class="photo-glow"></div>
+                </div>
+                <div class="code-animation">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">PlayerController.cs</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="code-keyword">public class</span> <span class="code-class">PlayerController</span> : <span class="code-class">MonoBehaviour</span></div>
+                        <div class="code-line"><span class="code-indent">    </span><span class="code-keyword">private</span> <span class="code-type">float</span> <span class="code-var">speed</span> = <span class="code-number">5f</span>;</div>
+                        <div class="code-line"><span class="code-indent">    </span><span class="code-keyword">void</span> <span class="code-method">Update</span>()</div>
+                        <div class="code-line"><span class="code-indent">        </span><span class="code-var">transform</span>.<span class="code-method">Translate</span>(<span class="code-var">Vector3</span>.<span class="code-property">forward</span> * <span class="code-var">speed</span> * <span class="code-type">Time</span>.<span class="code-property">deltaTime</span>);</div>
+                        <div class="code-line"><span class="code-indent">    </span>}</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <img src="jungle.jpg" alt="Milad Zandi Zand" class="about-image">
+                    <div class="about-image-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm Milad Zandi Zand, a full-stack developer with over 8 years of professional experience. 
+                        My main expertise lies in Unity game development, mobile application development for Android and iOS 
+                        using MAUI.NET, and building powerful backend systems with Laravel and modern frontend with Nuxt.js.
+                    </p>
+                    <p>
+                        As a Unity game developer, I have deep experience in building 2D and 3D games, 
+                        performance optimization, and implementing complex game mechanics. In mobile development, 
+                        I build cross-platform applications with MAUI.NET that run simultaneously on Android and iOS. 
+                        In web development, I build RESTful APIs and complex management systems with Laravel, 
+                        and implement fast and SEO-friendly user interfaces with Nuxt.js.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Unity</h3>
+                            <p>Game Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Unity Game Development</h3>
+                    <p>Building 2D and 3D games with Unity and C#</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>.NET MAUI</h3>
+                    <p>Cross-platform app development for Android and iOS</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3>Laravel</h3>
+                    <p>Backend and API development with Laravel PHP</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3>Nuxt.js</h3>
+                    <p>SSR and SPA frontend development with Nuxt.js and Vue.js</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android Development</h3>
+                    <p>Native Android application development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>iOS Development</h3>
+                    <p>Native iOS application development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript/TypeScript</h3>
+                    <p>Web development with JavaScript and TypeScript</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB and Redis</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AyarPlus Mobile Application</h3>
+                        <p>A comprehensive application for invoice and payment management using .NET MAUI</p>
+                        <div class="project-tags">
+                            <span class="tag">.NET MAUI</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">XAML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Management System</h3>
+                        <p>Online platform for project management and team collaboration</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(''); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Application</h3>
+                        <p>Online store with advanced shopping and payment features</p>
+                        <div class="project-tags">
+                            <span class="tag">.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <p>If you have a project or want to collaborate with me, I'd be happy to hear from you.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@miladzandi.ir</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>https://github.com/miladxandi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>https://www.linkedin.com/in/miladxandi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo-wrapper">
+                <img src="formal.jpg" alt="Milad Zandi Zand" class="footer-logo">
+            </div>
+            <p>&copy; 2024 Milad Zandi Zand. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/miladxandi" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/miladxandi" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/milad_xandi" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
