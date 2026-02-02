@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: 'Vazirmatn', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Vazirmatn FD NL', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -86,7 +86,7 @@ html[dir="ltr"] body {
     color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 800;
-    font-family: 'Vazirmatn', 'Inter', sans-serif;
+    font-family: 'Vazirmatn FD NL', 'Inter', sans-serif;
     letter-spacing: -0.5px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
@@ -107,7 +107,7 @@ html[dir="ltr"] body {
     font-weight: 600;
     transition: var(--transition);
     position: relative;
-    font-family: 'Vazirmatn', 'Inter', sans-serif;
+    font-family: 'Vazirmatn FD NL', 'Inter', sans-serif;
     font-size: 1rem;
 }
 
@@ -663,7 +663,7 @@ section {
     margin-bottom: 4rem;
     color: var(--text-primary);
     position: relative;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     letter-spacing: -0.5px;
 }
 
@@ -754,7 +754,7 @@ section {
     margin-bottom: 2rem;
     text-align: justify;
     font-weight: 400;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .about-stats {
@@ -806,14 +806,14 @@ section {
     background-clip: text;
     margin-bottom: 0.8rem;
     font-weight: 900;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .stat-item p {
     color: var(--text-secondary);
     font-weight: 600;
     font-size: 1.1rem;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 /* Skills Section */
@@ -873,7 +873,7 @@ section {
     margin-bottom: 0.8rem;
     color: var(--text-primary);
     font-weight: 700;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .skill-card p {
@@ -881,7 +881,7 @@ section {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     line-height: 1.8;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     font-weight: 400;
 }
 
@@ -1040,7 +1040,7 @@ section {
     margin-bottom: 0.8rem;
     color: var(--text-primary);
     font-weight: 700;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .project-content p {
@@ -1048,7 +1048,7 @@ section {
     margin-bottom: 1.2rem;
     line-height: 1.8;
     font-size: 1.05rem;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     font-weight: 400;
 }
 
@@ -1065,7 +1065,7 @@ section {
     font-size: 0.9rem;
     color: var(--text-secondary);
     font-weight: 600;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
@@ -1091,7 +1091,7 @@ section {
     margin-bottom: 1.5rem;
     color: var(--text-primary);
     font-weight: 800;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .contact-info p {
@@ -1099,7 +1099,7 @@ section {
     margin-bottom: 2.5rem;
     line-height: 2;
     font-size: 1.1rem;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     font-weight: 400;
 }
 
@@ -1149,14 +1149,14 @@ section {
     color: var(--text-primary);
     font-weight: 700;
     font-size: 1.2rem;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
 }
 
 .contact-details p {
     color: var(--text-secondary);
     margin: 0;
     font-size: 1rem;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     font-weight: 500;
 }
 
@@ -1165,11 +1165,30 @@ section {
     flex-direction: column;
     gap: 1.8rem;
     background: white;
-    padding: 2.5rem;
+    /*padding: 2.5rem;*/
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
 
+}
+.contact-form img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* مهم‌ترین خط */
+    display: block;
+}
+.contact-form a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    font-family: 'Vazirmatn FD NL', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form button {
+    font-family: 'Vazirmatn FD NL', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
 .form-group {
     display: flex;
     flex-direction: column;
@@ -1181,7 +1200,7 @@ section {
     padding: 16px 20px;
     border: 2px solid var(--border-color);
     border-radius: 12px;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     font-size: 1.05rem;
     transition: all 0.3s ease;
     background: var(--bg-primary);
@@ -1199,7 +1218,7 @@ section {
 .form-group textarea {
     resize: vertical;
     min-height: 140px;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn FD NL', sans-serif;
     line-height: 1.8;
 }
 
@@ -1253,7 +1272,7 @@ section {
 }
 
 .footer p {
-    font-family: 'Vazirmatn', 'Inter', sans-serif;
+    font-family: 'Vazirmatn FD NL', 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
     opacity: 0.9;

@@ -70,17 +70,17 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
-    
+
     // Here you would typically send the form data to a server
     // For now, we'll just show an alert
     alert(`پیام شما با موفقیت ارسال شد!\n\nنام: ${name}\nایمیل: ${email}\nموضوع: ${subject}\n\nدر حال حاضر این یک دمو است. برای فعال‌سازی کامل، باید یک سرویس backend اضافه کنید.`);
-    
+
     // Reset form
     contactForm.reset();
 });
@@ -150,7 +150,7 @@ function typeWriter() {
     if (currentElement < typingElements.length) {
         const element = typingElements[currentElement];
         const text = element.textContent;
-        
+
         if (!isDeleting && currentChar < text.length) {
             element.textContent = text.substring(0, currentChar + 1);
             currentChar++;
@@ -198,8 +198,8 @@ const codeSnippets = [
             { content: '', indent: 0 },
             { content: '<span class="code-keyword">namespace</span> <span class="code-class">App</span>\\<span class="code-class">Http</span>\\<span class="code-class">Controllers</span>;', indent: 0 },
             { content: '', indent: 0 },
-            { content: '<span class="code-keyword">class</span> <span class="code-class">UserController</span> <span class="code-keyword">extends</span> <span class="code-class">Controller</span>', indent: 0 },
-            { content: '<span class="code-indent">    </span><span class="code-keyword">public function</span> <span class="code-method">index</span>()', indent: 1 },
+            { content: '<span class="code-keyword">class</span> <span class="code-class">UserController</span> <span class="code-keyword">extends</span> <span class="code-class">Controller{</span>', indent: 0 },
+            { content: '<span class="code-indent">    </span><span class="code-keyword">public function</span> <span class="code-method">index</span>(){', indent: 1 },
             { content: '<span class="code-indent">        </span><span class="code-keyword">return</span> <span class="code-var">User</span>::<span class="code-method">all</span>();', indent: 2 },
             { content: '<span class="code-indent">    </span>}', indent: 1 },
             { content: '}', indent: 0 }
@@ -226,9 +226,9 @@ const codeSnippets = [
         lines: [
             { content: '<span class="code-keyword">using</span> <span class="code-class">UnityEngine</span>;', indent: 0 },
             { content: '', indent: 0 },
-            { content: '<span class="code-keyword">public class</span> <span class="code-class">GameManager</span> : <span class="code-class">MonoBehaviour</span>', indent: 0 },
+            { content: '<span class="code-keyword">public class</span> <span class="code-class">GameManager</span> : <span class="code-class">MonoBehaviour{</span>', indent: 0 },
             { content: '<span class="code-indent">    </span><span class="code-keyword">public static</span> <span class="code-class">GameManager</span> <span class="code-var">Instance</span>;', indent: 1 },
-            { content: '<span class="code-indent">    </span><span class="code-keyword">void</span> <span class="code-method">Awake</span>()', indent: 1 },
+            { content: '<span class="code-indent">    </span><span class="code-keyword">void</span> <span class="code-method">Awake</span>(){', indent: 1 },
             { content: '<span class="code-indent">        </span><span class="code-var">Instance</span> = <span class="code-keyword">this</span>;', indent: 2 },
             { content: '<span class="code-indent">    </span>}', indent: 1 },
             { content: '}', indent: 0 }
@@ -269,12 +269,12 @@ function generateRandomCode() {
 function renderCode() {
     const codeData = generateRandomCode();
     const codeAnimation = document.querySelector('.code-animation');
-    
+
     if (!codeAnimation) return;
-    
+
     const codeHeader = codeAnimation.querySelector('.code-header');
     const codeContent = codeAnimation.querySelector('.code-content');
-    
+
     // Update title with fade effect
     const codeTitle = codeHeader.querySelector('.code-title');
     if (codeTitle) {
@@ -285,10 +285,10 @@ function renderCode() {
             codeTitle.style.opacity = '1';
         }, 150);
     }
-    
+
     // Clear existing code lines
     codeContent.innerHTML = '';
-    
+
     // Create and append new code lines
     codeData.lines.forEach((line, index) => {
         const codeLine = document.createElement('div');
@@ -297,7 +297,7 @@ function renderCode() {
         codeLine.style.animationDelay = `${index * 0.15}s`;
         codeContent.appendChild(codeLine);
     });
-    
+
     // Trigger fade-in animation for each line
     setTimeout(() => {
         const codeLines = codeContent.querySelectorAll('.code-line');
