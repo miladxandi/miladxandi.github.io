@@ -1640,6 +1640,7 @@ html {
     }
 }
 /* ── Mobile menu fix ── */
+/* ── Mobile menu fix ── */
 @media (max-width: 768px) {
     .nav-menu {
         top: 70px;
