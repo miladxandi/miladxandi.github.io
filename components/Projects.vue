@@ -19,6 +19,7 @@ const projects: Project[] = [
   {
     title: t('projects.currency.title'),
     image: "https://www.karlancer.com/api/file/x/x764/2604/1769095446-Yb1L.png",
+    link: "https://sabad-app.ir",
     tags: [".NET MAUI", "C#"]
   },
   {

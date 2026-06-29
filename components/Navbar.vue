@@ -41,8 +41,8 @@ function switchLang(code: string) {
         <a href="#projects" class="text-text-main hover:text-primary transition">
           {{ t('nav.projects') }}
         </a>
-        <a href="#contact" class="text-text-main hover:text-primary transition">
-          {{ t('nav.contact') }}
+        <a href="https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/Resume.pdf" target="_blank" class="text-text-main hover:text-primary transition">
+          {{ t('nav.resume') }}
         </a>
       </nav>
 

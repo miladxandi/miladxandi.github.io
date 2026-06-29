@@ -33,7 +33,7 @@ const { t } = useI18n()
         <div class="flex gap-4">
 
           <a
-              href="https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/Resume.pdf"
+              href="https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/Resume.pdf" target="_blank"
               class="bg-teal-500 px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition"
           >
             {{ t('hero.resume') }}

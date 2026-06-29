@@ -12,7 +12,13 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
   icon: {
-    serverBundle: 'local'
+    clientBundle: {
+      icons: [
+        'mdi:white-balance-sunny',
+        'mdi:moon-waning-crescent'
+      ],
+      scan: true,// آیکون‌های ثابت رو هم خودکار پیدا می‌کنه
+    }
   },
   site: {
     url: 'https://miladzandi.ir'
