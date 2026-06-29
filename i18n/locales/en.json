@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "name": "Milad Zandi Zand",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "hello": "Hello 👋",
+    "name": "I'm Milad Zandi Zand",
+    "title": "Full‑Stack Developer",
+    "description": "Web and application developer focused on building fast, scalable and modern products.",
+    "contact": "Contact Me",
+    "projects": "View Projects"
+  },
+
+  "about": {
+    "title": "About Me",
+    "p1": "I am a full‑stack developer passionate about building modern web and mobile applications.",
+    "p2": "My focus is creating fast, scalable software with great user experiences.",
+
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Completed",
+      "role": "Web & Mobile",
+      "stack": "Fullstack"
+    }
+  },
+
+  "skills": {
+    "title": "Tech Stack"
+  },
+
+  "projects": {
+    "title": "Recent Projects",
+    "view_project": "View Project",
+
+    "ayarplus": {
+      "title": "AyarPlus"
+    },
+
+    "currency": {
+      "title": "Currency & Gold App"
+    },
+
+    "alvan": {
+      "title": "AlvanMarket"
+    }
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's collaborate on your next project",
+    "email": "Email Me",
+    "telegram": "Telegram"
+  },
+
+  "footer": {
+    "copyright": "© {year} Milad Zandi Zand"
+  }
+}
