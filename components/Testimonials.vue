@@ -9,6 +9,7 @@ const activeCard = ref<number | null>(null)
 let timer: any = null
 
 const testimonials = [
+  { name: "Jalal.Ja", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t8') },
   { name: "Sajjad.Kh", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t1') },
   { name: "Fereydon.Ah", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t2') },
   { name: "Reza.M", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
