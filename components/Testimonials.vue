@@ -9,11 +9,11 @@ const activeCard = ref<number | null>(null)
 let timer: any = null
 
 const testimonials = [
-  { name: "Sajjad.Kh", role: "Project Manager", avatar: "https://cdn.karlancer.com/assets/icons/images/user.svg", text: t('testimonials.t1') },
-  { name: "Fereydon.Ah", role: "Project Manager", avatar: "https://cdn.karlancer.com/assets/icons/images/user.svg", text: t('testimonials.t2') },
-  { name: "Reza.M", role: "Project Owner", avatar: "https://www.karlancer.com/f/avatar/1718444320-JBvK.jpg", text: t('testimonials.t3') },
-  { name: "Hossein.Sh", role: "Project Owner", avatar: "https://www.karlancer.com/f/avatar/1710082261ACg8ocJMQP-oJ4cBO_6zIjcZ--zceWSs7TDdGl87jASlueKk=s96-c", text: t('testimonials.t4') },
-  { name: "Mehran.Ra", role: "Product Manager", avatar: "https://www.karlancer.com/f/avatar/1704554554-q1dz.png", text: t('testimonials.t5') },
+  { name: "Sajjad.Kh", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t1') },
+  { name: "Fereydon.Ah", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t2') },
+  { name: "Reza.M", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
+  { name: "Hossein.Sh", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/hossein_shahmohammadi.jpg", text: t('testimonials.t4') },
+  { name: "Mehran.Ra", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_rahmani.jpg", text: t('testimonials.t5') },
   { name: "Ali.Sa", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/ali_sadeghi.jpg", text: t('testimonials.t6') },
   { name: "Mehran.Za", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_zandi.jpg", text: t('testimonials.t7') }
 ]
