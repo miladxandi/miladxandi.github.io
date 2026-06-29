@@ -14,7 +14,7 @@ const testimonials = [
   { name: "Jalal.Ja", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t8') },
   { name: "Sajjad.Kh", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t1') },
   { name: "Fereydon.Ah", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t2') },
-  { name: "Reza.M", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
+  { name: "Reza.Mo", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
   { name: "Hossein.Sh", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/hossein_shahmohammadi.jpg", text: t('testimonials.t4') },
   { name: "Mehran.Ra", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_rahmani.png", text: t('testimonials.t5') },
   { name: "Ali.Sa", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/ali_sadeghi.jpg", text: t('testimonials.t6') },

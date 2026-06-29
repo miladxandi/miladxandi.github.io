@@ -38,6 +38,9 @@ function switchLang(code: string) {
         <a href="#skills" class="text-text-main hover:text-primary transition">
           {{ t('nav.skills') }}
         </a>
+        <a href="#testimonials" class="text-text-main hover:text-primary transition">
+          {{ t('nav.testimonials') }}
+        </a>
         <a href="#projects" class="text-text-main hover:text-primary transition">
           {{ t('nav.projects') }}
         </a>

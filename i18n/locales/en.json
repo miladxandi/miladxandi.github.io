@@ -9,6 +9,7 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
+    "testimonials": "Testimonials",
     "projects": "Projects",
     "resume": "Resume"
   },
@@ -57,7 +58,7 @@
       "title": "Ayar+ Native Apps"
     },
     "ayarplus_service": {
-      "title": "RFID Kuwaiti national card scanner"
+      "title": "RFID national card scanner"
     },
     "esht": {
       "title": "Esht Game Engine"
