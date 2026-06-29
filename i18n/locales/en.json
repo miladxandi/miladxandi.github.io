@@ -10,7 +10,7 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Resume"
   },
 
   "hero": {
@@ -18,7 +18,7 @@
     "name": "I'm Milad Zandi Zand",
     "title": "Full‑Stack Developer",
     "description": "Web and application developer focused on building fast, scalable and modern products.",
-    "contact": "Contact Me",
+    "resume": "Contact Me",
     "projects": "View Projects"
   },
 

@@ -33,10 +33,10 @@ const { t } = useI18n()
         <div class="flex gap-4">
 
           <a
-              href="#contact"
+              href="https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/Resume.pdf"
               class="bg-teal-500 px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition"
           >
-            {{ t('hero.contact') }}
+            {{ t('hero.resume') }}
           </a>
 
           <a

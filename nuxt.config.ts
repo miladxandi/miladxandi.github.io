@@ -11,7 +11,9 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/sitemap',
   ],
-
+  icon: {
+    serverBundle: 'local'
+  },
   site: {
     url: 'https://miladzandi.ir'
   },
