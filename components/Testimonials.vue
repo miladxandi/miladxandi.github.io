@@ -4,21 +4,21 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const MAX_LENGTH = 160
+const MAX_LENGTH = 100
 const intervalMs = 5000
 
 const activeCard = ref<number | null>(null)
 let timer: ReturnType<typeof setInterval> | null = null
 
 const testimonials = [
-  { name: "Jalal.Ja", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t8') },
-  { name: "Sajjad.Kh", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t1') },
-  { name: "Fereydon.Ah", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t2') },
-  { name: "Reza.Mo", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
-  { name: "Hossein.Sh", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/hossein_shahmohammadi.jpg", text: t('testimonials.t4') },
-  { name: "Mehran.Ra", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_rahmani.png", text: t('testimonials.t5') },
-  { name: "Ali.Sa", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/ali_sadeghi.jpg", text: t('testimonials.t6') },
-  { name: "Mehran.Za", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_zandi.jpg", text: t('testimonials.t7') }
+  { name: "Jalal Ja", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t8') },
+  { name: "Sajjad Kh", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t1') },
+  { name: "Fereydon Ah", role: "Project Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/avatar.jpg", text: t('testimonials.t2') },
+  { name: "Reza Mo", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/reza_mohammadi.jpg", text: t('testimonials.t3') },
+  { name: "Hossein Sh", role: "Project Owner", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/hossein_shahmohammadi.jpg", text: t('testimonials.t4') },
+  { name: "Mehran Ra", role: "Product Manager", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_rahmani.png", text: t('testimonials.t5') },
+  { name: "Ali Sa", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/ali_sadeghi.jpg", text: t('testimonials.t6') },
+  { name: "Mehran Za", role: "CEO", avatar: "https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/persons/mehran_zandi.jpg", text: t('testimonials.t7') }
 ]
 
 const loadedAvatars = reactive<Record<number, boolean>>({})
@@ -89,7 +89,7 @@ onUnmounted(() => {
             v-for="(item, i) in testimonials"
             :key="i"
             @click="openCard(i)"
-            class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg min-h-[260px] flex flex-col justify-between cursor-pointer hover:-translate-y-2 transition-all duration-300"
+            class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg min-h-[150px] flex flex-col justify-between cursor-pointer hover:-translate-y-2 transition-all duration-300"
         >
           <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
             “{{ trimText(item.text) }}”
