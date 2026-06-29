@@ -38,7 +38,7 @@ const handleImageLoad = () => {
           <a
               href="https://xandi-interactives.s3.ir-thr-at1.arvanstorage.ir/Resume.pdf"
               target="_blank"
-              class="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition duration-300"
+              class="bg-teal-500 px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition duration-300"
           >
             {{ t('hero.resume') }}
           </a>
