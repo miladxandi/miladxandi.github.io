@@ -117,7 +117,7 @@ export default defineNuxtConfig({
     preset: "static",
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/','/en']
     },
     compressPublicAssets: true
   },
@@ -125,10 +125,4 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false
   },
-
-  vite: {
-    build: {
-      cssCodeSplit: true
-    }
-  }
 })
