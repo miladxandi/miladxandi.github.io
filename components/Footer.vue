@@ -12,10 +12,9 @@ const year = new Date().getFullYear()
 
     <div class="max-w-6xl mx-auto px-6 text-center">
 
-      <img
-          src="/images/logo.jpg"
-          class="w-12 mx-auto mb-4 rounded-lg"
-      />
+      <NuxtImg src="/images/logo.jpg"
+               class="w-12 mx-auto mb-4 rounded-lg"
+               :alt="t('nav.name')"/>
 
       <p class="text-sm text-slate-400">
 

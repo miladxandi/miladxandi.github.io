@@ -46,12 +46,11 @@ const projects: Project[] = [
             class="group rounded-xl overflow-hidden border border-border-custom bg-bg-card hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition duration-300"
         >
           <div class="relative h-48 overflow-hidden">
-            <img
-                :src="p.image"
-                :alt="p.title"
-                loading="lazy"
-                class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition duration-500"
-            />
+            <NuxtImg :src="p.image"
+                     :alt="p.title"
+                     loading="lazy"
+                     class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition duration-500"
+                     />
           </div>
 
           <div class="p-6">

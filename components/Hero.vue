@@ -55,10 +55,9 @@ const { t } = useI18n()
 
       <div class="space-y-6">
 
-        <img
-            src="/images/formal.jpg"
-            class="rounded-2xl shadow-xl"
-        />
+        <NuxtImg src="/images/formal.jpg"
+                 class="rounded-2xl shadow-xl"
+                 :alt="t('nav.name')"/>
 
       </div>
 

@@ -8,10 +8,9 @@ const { t } = useI18n()
 
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-      <img
-          src="/images/jungle-macbook.jpg"
-          class="rounded-2xl shadow-xl"
-      />
+      <NuxtImg src="/images/jungle-macbook.jpg"
+               class="rounded-2xl shadow-xl"
+               :alt="t('nav.name')"/>
 
       <div>
 

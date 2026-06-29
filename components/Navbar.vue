@@ -19,7 +19,9 @@ function switchLang(code: string) {
 
       <!-- logo -->
       <div class="flex items-center gap-3">
-        <img src="/images/logo.jpg" class="w-10 h-10 rounded-lg" />
+        <NuxtImg src="/images/logo.jpg"
+                 class="w-10 h-10 rounded-lg"
+                 :alt="t('nav.name')"/>
         <h1 class="font-semibold text-lg text-text-main">
           {{ t('nav.name') }}
         </h1>
