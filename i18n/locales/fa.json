@@ -53,15 +53,22 @@
     "view_project": "مشاهده پروژه",
 
     "ayarplus": {
-      "title": "عیار+"
+      "title": "اپلیکیشن محلی عیار+"
     },
-
+    "esht": {
+      "title": "موتور بازی سازی Esht"
+    },
+    "ayarplus_service": {
+      "title": "اسکنر RFID کارت ملی کویتی"
+    },
     "currency": {
-      "title": "اپلیکیشن سبد"
+      "title": "اپلیکیشن محلی سبد"
     },
-
+    "alvanmarketapp": {
+      "title": "اپلیکیشن محلی الوان مارکت"
+    },
     "alvan": {
-      "title": "الوان مارکت"
+      "title": "وب سایت الوان مارکت"
     }
   },
 

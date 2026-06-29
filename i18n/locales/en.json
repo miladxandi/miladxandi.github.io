@@ -54,15 +54,22 @@
     "view_project": "View Project",
 
     "ayarplus": {
-      "title": "Ayar+"
+      "title": "Ayar+ Native Apps"
     },
-
+    "ayarplus_service": {
+      "title": "RFID Kuwaiti national card scanner"
+    },
+    "esht": {
+      "title": "Esht Game Engine"
+    },
     "currency": {
-      "title": "Sabad App"
+      "title": "Sabad Native Apps"
     },
-
+    "alvanmarketapp": {
+      "title": "AlvanMarket Native Apps"
+    },
     "alvan": {
-      "title": "AlvanMarket"
+      "title": "AlvanMarket Website"
     }
   },
 

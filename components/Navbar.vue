@@ -66,13 +66,14 @@ function switchLang(code: string) {
               @click="isLangOpen = !isLangOpen"
               class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-custom hover:bg-bg-card transition text-sm text-text-main"
           >
-            {{ locale.toUpperCase() }}
+            {{ locale.toUpperCase()=="FA"?"فا":"En" }}
             <Icon name="mdi:chevron-down" class="w-4 h-4" />
           </button>
 
           <div
               v-if="isLangOpen"
-              class="absolute left-0 mt-2 w-32 rounded-xl border border-border-custom bg-bg-card shadow-lg overflow-hidden z-50"
+              class="absolute mt-2 w-32 rounded-xl border border-border-custom bg-bg-card shadow-lg overflow-hidden z-50"
+              :class="locale.toUpperCase()=='FA'?'left-0':'right-0'"
           >
             <button
                 v-for="lang in locales"
