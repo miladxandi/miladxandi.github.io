@@ -44,7 +44,7 @@ const { t } = useI18n()
 
           <div>
             <h3 class="text-3xl font-bold text-teal-400">100%</h3>
-            <a href="karlancer.com/profile/43315" target="_blank" >
+            <a href="https://karlancer.com/profile/43315" target="_blank" >
               <p class="text-sm text-slate-400">
                 {{ t('about.stats.role') }}
               </p>
