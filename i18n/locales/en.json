@@ -21,6 +21,16 @@
     "resume": "Resume",
     "projects": "View Projects"
   },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "t1": "Professional, friendly, and highly skilled.",
+    "t2": "Excellent work. The project was completed quickly and with great quality.",
+    "t3": "Very respectful, professional, and precise. I was satisfied with every stage of the project.",
+    "t4": "Working with him was a great experience. During the project he provided helpful consultation and practical solutions. He is responsive, knowledgeable, and experienced with multiple programming languages.",
+    "t5": "Very patient and detail‑oriented. They carefully implemented all of our feedback.",
+    "t6": "Our agency group based in Germany is proud to have worked with Milad on our website project. The modern implementation, PayPal integration, and international web services were handled perfectly, especially considering the multilingual nature of the project.",
+    "t7": "I am very satisfied with our collaboration. He is highly committed to his work and delivered the project right on schedule."
+  },
 
   "about": {
     "title": "About Me",
