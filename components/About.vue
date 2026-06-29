@@ -29,7 +29,7 @@ const { t } = useI18n()
         <div class="grid grid-cols-3 gap-6 text-center">
 
           <div>
-            <h3 class="text-3xl font-bold text-teal-400">8+</h3>
+            <h3 class="text-3xl font-bold text-teal-400">10+</h3>
             <p class="text-sm text-slate-400">
               {{ t('about.stats.years') }}
             </p>
@@ -43,10 +43,12 @@ const { t } = useI18n()
           </div>
 
           <div>
-            <h3 class="text-3xl font-bold text-teal-400">{{ t('about.stats.stack') }}</h3>
-            <p class="text-sm text-slate-400">
-              {{ t('about.stats.role') }}
-            </p>
+            <h3 class="text-3xl font-bold text-teal-400">100%</h3>
+            <a href="karlancer.com/profile/43315" target="_blank" >
+              <p class="text-sm text-slate-400">
+                {{ t('about.stats.role') }}
+              </p>
+            </a>
           </div>
 
         </div>
