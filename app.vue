@@ -49,8 +49,7 @@ if (import.meta.client) {
     sessionStorage.setItem("session", session)
   }
 
-  const clarityId = Clarity.uid ?? uuid
-  Clarity.identify(clarityId, session, route.fullPath)
+  Clarity.identify(uuid, session, route.fullPath)
 
 }
 </script>
