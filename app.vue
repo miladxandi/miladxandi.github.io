@@ -6,7 +6,7 @@ const { t, locale } = useI18n()
 // متاتگ‌های SEO چندزبانه (lang, dir, hreflang, canonical) خودکار ساخته میشن
 const head = useLocaleHead({
   addDirAttribute: true,
-  addSeoAttributes: true
+  addSeoAttributes: true,
 })
 
 useHead({
@@ -29,6 +29,16 @@ useHead({
     { name: 'twitter:description', content: () => t('seo.description') }
   ]
 })
+
+if (import.meta.client) {
+  const { default: Clarity } = await import("@microsoft/clarity");
+  Clarity.init("xeygskpluh");
+
+  const uuid = crypto.randomUUID();
+  const session = crypto.randomUUID();
+  const clarityId = Clarity.uuid ?? uuid;
+  Clarity.identify(clarityId, session, route.fullPath);
+}
 </script>
 
 <template>

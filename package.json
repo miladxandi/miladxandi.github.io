@@ -9,6 +9,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@microsoft/clarity": "^1.0.2",
     "@nuxt/content": "^3.14.0",
     "@nuxt/icon": "^2.2.4",
     "@nuxt/image": "latest",
