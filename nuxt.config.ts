@@ -4,7 +4,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/content',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@nuxtjs/i18n',
