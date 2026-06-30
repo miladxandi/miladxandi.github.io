@@ -32,13 +32,26 @@ useHead({
 })
 
 if (import.meta.client) {
-  const { default: Clarity } = await import("@microsoft/clarity");
-  Clarity.init("xeygskpluh");
+  const { default: Clarity } = await import("@microsoft/clarity")
+  Clarity.init("xeygskpluh")
 
-  const uuid = crypto.randomUUID();
-  const session = crypto.randomUUID();
-  const clarityId = Clarity.uuid ?? uuid;
-  Clarity.identify(clarityId, session, route.fullPath);
+// uuid: شناسه دائمی کاربر
+  let uuid = localStorage.getItem("uuid")
+  if (!uuid) {
+    uuid = crypto.randomUUID()
+    localStorage.setItem("uuid", uuid)
+  }
+
+// session: شناسه موقت، با بستن تب پاک میشه
+  let session = sessionStorage.getItem("session")
+  if (!session) {
+    session = crypto.randomUUID()
+    sessionStorage.setItem("session", session)
+  }
+
+  const clarityId = Clarity.uid ?? uuid
+  Clarity.identify(clarityId, session, route.fullPath)
+
 }
 </script>
 
